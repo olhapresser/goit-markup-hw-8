@@ -1,0 +1,19 @@
+@import './utils/variables';
+@import './utils/mixins';
+
+@import './base/common';
+@import './base/resets';
+
+@import './components/modal';
+@import './components/header';
+@import './components/footer';
+@import './components/menu';
+
+@import './main-page/order';
+@import './main-page/advantages';
+@import './main-page/whatdo';
+@import './main-page/team';
+@import './main-page/customers';
+
+@import './portfolio/cards';
+@import './portfolio/examples';

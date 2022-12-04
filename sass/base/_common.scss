@@ -1,0 +1,88 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+}
+
+.second-heading {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42/36);
+    text-align: center;
+
+    color: var(--second-text-color);
+}
+
+
+.button {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    cursor: pointer;
+    text-align: center;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+
+
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+     }
+  
+     @media screen and (min-width: 1200px) {
+        max-width: 1170px;
+     }
+
+  
+    @include mobile {
+      max-width: 420px;
+    }
+    @include tablet {
+      max-width: 768px;
+    }
+    @include desktop {
+      max-width: 1200px;
+    }
+}
+
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include desktop{
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
